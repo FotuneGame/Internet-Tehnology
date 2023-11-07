@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход</title>
+    <link rel="stylesheet" href="css/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/light_style.css" id="theme-link">
+</head>
+<body>
+<!-- Шапка (адаптивная для сайта)-->
+<div class="collapse mobile position-absolute w-100 z-3" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+
+        <div class="navbar-nav text-light">
+            <button class="navbar-toggler mobile mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <p class="p-2" id="close">Закрыть</p>
+            </button>
+            <a class="nav-link mb-4" id="main_mobile" aria-current="page" href="index.html">Главная</a>
+            <a class="nav-link mb-4" id="about_mobile" href="about.html">Что-то про нас</a>
+            <a class="nav-link mb-4" id="info_mobile" href="https://www.youtube.com/shorts/BoGJg0EDkKk">Круто</a>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand pc" href="index.html" id="brand">Гномы</a>
+
+        <!-- pc - класс объектов для сайта на пк, mobile - для телефонов и планшетов -->
+        <div class="collapse navbar-collapse pc">
+            <div class="navbar-nav">
+                <a class="nav-link" id="main" aria-current="page" href="index.html">Главная</a>
+                <a class="nav-link" id="about" href="about.html">Что-то про нас</a>
+                <a class="nav-link" id="info" href="https://www.youtube.com/shorts/BoGJg0EDkKk">Круто</a>
+            </div>
+        </div>
+        <button class="navbar-toggler mobile mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <p class="p-2" id="more_gamburger">Подробней</p>
+        </button>
+    </div>
+</nav>
+<!-- лоадер -->
+<div id='loader_main' class="loader-bg position-absolute top-50 start-50 translate-middle w-100 h-100 z-3">
+    <div class="d-flex justify-content-center align-items-center h-100">
+        <span class="loader"></span>
+    </div>
+</div>
+<!-- Форма входа в акк-->
+<section class="position-absolute top-50 start-50 translate-middle w-50">
+    <form>
+        <!-- ОШИБКА-->
+        <div id="error">
+            <p class="mb-4 text-danger text-center" id="error_login">
+                Не удалось войти в аккаунт
+            </p>
+        </div>
+        <!-- Почта -->
+        <div class="form-outline mb-4">
+            <input type="email" id="email" class="form-control" placeholder="Электронная почта"/>
+        </div>
+
+        <!-- Пароль -->
+        <div class="form-outline mb-4">
+            <input type="password" id="password" class="form-control" placeholder="Пароль"/>
+        </div>
+
+        <!-- Запомнить галочка -->
+        <div class="row mb-4">
+            <div class="col d-flex justify-content-center">
+                <!-- Checkbox -->
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="not_for_session" checked />
+                    <label class="form-check-label" for="not_for_session"> Запомнить меня </label>
+                </div>
+            </div>
+
+            <div class="col form-check text-center">
+                <a href="forgot_password.html">Забыли пароль?</a>
+            </div>
+        </div>
+
+        <!-- Подтверждение-->
+        <div class="form-outline mb-4">
+            <input id="btn_login" class="btn btn-primary btn-block form-control" value="Войти"/>
+        </div>
+
+        <div class="text-center">
+            <p>Впервые здесь? <a href="register_email.html" >Регистрация</a></p>
+        </div>
+    </form>
+</section>
+</body>
+<script defer src="css/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- для работы с import в js файлах-->
+<script type="module" src="../../API/API.js"></script>
+<script src="js/isAuth.js"></script>
+</html>

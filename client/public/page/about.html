@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>О нас</title>
+    <link rel="stylesheet" href="css/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/light_style.css" id="theme-link">
+</head>
+<body class="d-flex flex-column min-vh-100">
+<!-- Шапка (адаптивная для сайта)-->
+<div class="collapse mobile position-absolute w-100 z-3" id="navbarToggleExternalContent">
+    <div class="bg-dark p-4">
+
+        <div class="navbar-nav text-light">
+            <button class="navbar-toggler mobile mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <p class="p-2" id="close">Закрыть</p>
+            </button>
+            <a class="nav-link mb-4" id="main_mobile" aria-current="page" href="index.html">Главная</a>
+            <a class="nav-link mb-4 active" id="about_mobile" href="about.html">Что-то про нас</a>
+            <a class="nav-link mb-4" id="info_mobile" href="https://www.youtube.com/shorts/BoGJg0EDkKk">Круто</a>
+        </div>
+        <div class="sign_out">
+            <div class="navbar-nav">
+                <button class="btn btn-primary m-2" aria-current="page"><a class="nav-link text-light"  href="login.html" id="enter_btn_mobile">Войти</a></button>
+            </div>
+        </div>
+        <div class="d-flex d-inline-block justify-content-around">
+            <div class="navbar-nav sign">
+                <a class="nav-link m-2 text-light text-center px-5 py-3" id="account_name_mobile" aria-current="page" href="account.html">Имя пользователя</a>
+            </div>
+            <div class="navbar-nav sign">
+                <button class="btn btn-danger m-2 px-5 py-3" id="btn_exit_account_mobile" aria-current="page"><a class="nav-link text-light" id="exit_btn_mobile">Выйти</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand pc" href="index.html" id="brand">Гномы</a>
+
+        <!-- pc - класс объектов для сайта на пк, mobile - для телефонов и планшетов -->
+        <div class="collapse navbar-collapse pc">
+            <div class="navbar-nav">
+                <a class="nav-link" id="main" aria-current="page" href="index.html">Главная</a>
+                <a class="nav-link active" id="about" href="about.html">Что-то про нас</a>
+                <a class="nav-link" id="info" href="https://www.youtube.com/shorts/BoGJg0EDkKk">Круто</a>
+            </div>
+        </div>
+        <button class="navbar-toggler mobile mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <p class="p-2" id="more_gamburger">Подробней</p>
+        </button>
+        <div class="d-flex pc">
+            <div class="sign_out">
+                <div class="navbar-nav pc">
+                    <button class="btn btn-primary m-2" aria-current="page" href="login.html"><a class="nav-link text-light p-0" id="enter_btn" href="login.html">Войти</a></button>
+                </div>
+            </div>
+            <div class="sign">
+                <div class="navbar-nav d-flex mx-auto">
+                    <a class="nav-link active m-2 pc" id="account_name" aria-current="page" href="account.html">Имя пользователя</a>
+                    <button class="btn btn-danger m-2 pc" id="btn_exit_account" aria-current="page"><a class="nav-link text-light p-0" id="exit_btn">Выйти</a></button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</nav>
+<!-- лоадер -->
+<div id='loader_main' class="loader-bg position-absolute top-50 start-50 translate-middle w-100 h-100 z-3">
+    <div class="d-flex justify-content-center align-items-center h-100">
+        <span class="loader"></span>
+    </div>
+</div>
+
+<section class="d-flex justify-content-center w-100 main_div">
+    <div class="overflow-hidden w-100">
+        <div class="bg-black position-relative w-100 main_div d-flex">
+            <img class="img-fluid position-absolute opacity-25 w-100" alt="Main gnome" src="static/img/4.jpg">
+            <div class="px-4 align-self-center">
+                <h1 id="about_h1" class="text-light">Про гномов и нас</h1>
+                <h6 id="about_h6" class="text-light">"В горах, среди металла и камня, мы нашли наше призвание. Мы гномы хардбасеры, и наши ритмы разрушают горные вершины." </br> Цитата: Гном Кирпич</h6>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="d-flex justify-content-center w-100 py-4">
+    <div class="overflow-hidden w-100">
+        <div class="position-relative w-100 d-flex justify-content-around">
+            <div class="w-75">
+                <h1 id="info_about_1_h1" class="text-center">Как нас найти?</h1>
+                <p id="info_about_1_p" class="txt-24 text-center">Эти цитаты отражают гордость и страсть гномов хардбасеров к музыке, а также их умение объединить мир фэнтези с электронными звуками в уникальное и захватывающее искусство. </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Яндекс карта-->
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A477191d456ab81833faf6e8b2e954e31847f388d225052fbad2ab6fd02c25e95&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+
+<!-- Футер -->
+<footer class="bg-dark text-center text-white mt-auto">
+    <div class="container p-4 pb-0">
+        <section class="mb-4">
+            <a class="btn btn-outline-light btn-floating m-1" href="https://t.me/GrishaPopLop" role="button">
+                <i class="fa fa-telegram" aria-hidden="true"></i>
+            </a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://vk.com/id244759286" role="button">
+                <i class="fa fa-vk" aria-hidden="true"></i>
+            </a>
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/FotuneGame" role="button">
+                <i class="fa fa-git" aria-hidden="true"></i>
+            </a>
+        </section>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2023 GnomeHardbass:
+        <a class="text-white" href="https://gnomehardbass.ru">gnomehardbass.ru</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+
+</body>
+<script defer src="css/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+<!-- для работы с import в js файлах-->
+<script type="module" src="../../API/API.js"></script>
+<script src="js/isAuth.js"></script>
+</html>

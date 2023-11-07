@@ -1,0 +1,8 @@
+.idea/
+sslcert/
+ports.conf
+client/node_modules/
+client/.env
+server/node_modules/
+server/.env
+server/for_hosting
